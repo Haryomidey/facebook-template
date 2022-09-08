@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <script src="https://kit.fontawesome.com/b5e96276c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="my-facebook.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <h1 class="logo">JohnOliver book</h1>
+            <ul>
+                <li><i class="fa fa-bell-o"></i></li>
+                <li><i class="fa fa-envelope-o"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/Ayomide-1.png">
+            </div>
+        </div>
+
+
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/Ayomide-1.png">
+                    <div>
+                        <p>Oladiipo Ayanlekan<br> Ayomide
+                        </p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedbacks</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/chevron-arrow.jpg" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.jpg" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/chevron-arrow.jpg" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/moon.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/chevron-arrow.jpg" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout-1.png " class="settings-icon">
+                    <a href="#">Logout <img src="images/chevron-arrow.jpg" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><i class="fa fa-newspaper-o"></i>
+                    Latest News
+                </a>
+                <a href="#"><i class="fas fa-user-friends"></i>
+                    Friends
+                </a>
+                <a href="#"><i class="fas fa-user-group"></i>
+                    Group
+                </a>
+                <a href="#"><i class="fas fa-user-group"></i>
+                    Marketplace
+                </a>
+                <a href="#"><i class="fas fa-user-group"></i>
+                    Watch
+                </a>
+                <a href="#">See More</a>
+            </div>
+            <div class="short-cut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/messi-1.jfif">Lionel Messi</a>
+                <a href="#"><img src="images/messi-2.jfif">King Leo</a>
+                <a href="#"><img src="images/ronaldo-1.jfif">CR7</a>
+                <a href="#"><img src="images/ronaldo-2.jfif">Cristiano Ronaldo</a>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/round-plus.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/people-3.jfif">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/image-5-edit.jpg">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/image-3.jpg">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/image-6-edit.jpg">
+                    <p>Post Story</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/Ayomide-1.png">
+                    <div>
+                        <p>Oladiipo Ayanlekan Ayomide</p>
+                        <small>Public</small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind Ayomide?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/video-plus.png">Live video</a>
+                        <a href="#"><img src="images/live-1.png">Photo/Video</a>
+                        <a href="#"><img src="images/emoji-2.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Ayomide-1.png">
+                        <div>
+                            <p>Oladiipo Ayanlekan Ayomide</p>
+                            <span>May 12 2022, 10:21 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/three-dot.png" class="three-dot"></a>
+                </div>
+
+                <p class="post-text">This is just a random text because I don't know what to write here, anyways
+                    <span>Messi
+                        is the Greatest
+                        footballer of all time.</span><a href="#">#EndASUUstrike.</a><a href="#">#LEOMESSIISTHEGOAT.</a>
+                </p>
+                <img src="images/photo-city.jfif" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-img.jfif">30k</div>
+                        <div><img src="images/message-1.png">11k</div>
+                        <div><img src="images/share-edit.png">2k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Ayomide-1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Ayomide-1.png">
+                        <div>
+                            <p>Oladiipo Ayanlekan Ayomide</p>
+                            <span>May 14 2022, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/three-dot.png" class="three-dot"></a>
+                </div>
+
+                <p class="post-text">So as I was saying in the other post, you all agreed to the fact Messi is the
+                    <span>GOAT</span>
+                    <a href="#">#EndASUUstrike.</a><a href="#">#LEOMESSIISTHEGOAT.</a>
+                </p>
+                <img src="images/people-4.jpg" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-img.jfif">24k</div>
+                        <div><img src="images/message-1.png">7k</div>
+                        <div><img src="images/share-edit.png">769</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Ayomide-1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Ayomide-1.png">
+                        <div>
+                            <p>Oladiipo Ayanlekan Ayomide</p>
+                            <span>May 12 2022, 10:21 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/three-dot.png" class="three-dot"></a>
+                </div>
+
+                <p class="post-text">This is just a random text because I don't know what to write here, anyways
+                    <span>Messi
+                        is the Greatest
+                        footballer of all time.</span><a href="#">#EndASUUstrike.</a><a href="#">#LEOMESSIISTHEGOAT.</a>
+                </p>
+                <img src="images/photo-city.jfif" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-img.jfif">30k</div>
+                        <div><img src="images/message-1.png">11k</div>
+                        <div><img src="images/share-edit.png">2k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Ayomide-1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Ayomide-1.png">
+                        <div>
+                            <p>Oladiipo Ayanlekan Ayomide</p>
+                            <span>May 12 2022, 10:21 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/three-dot.png" class="three-dot"></a>
+                </div>
+
+                <p class="post-text">This is just a random text because I don't know what to write here, anyways
+                    <span>Messi
+                        is the Greatest
+                        footballer of all time.</span><a href="#">#EndASUUstrike.</a><a href="#">#LEOMESSIISTHEGOAT.</a>
+                </p>
+                <img src="images/photo-city.jfif" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-img.jfif">30k</div>
+                        <div><img src="images/message-1.png">11k</div>
+                        <div><img src="images/share-edit.png">2k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Ayomide-1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/Ayomide-1.png">
+                        <div>
+                            <p>Oladiipo Ayanlekan Ayomide</p>
+                            <span>May 12 2022, 10:21 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><img src="images/three-dot.png" class="three-dot"></a>
+                </div>
+
+                <p class="post-text">This is just a random text because I don't know what to write here, anyways
+                    <span>Messi
+                        is the Greatest
+                        footballer of all time.</span><a href="#">#EndASUUstrike.</a><a href="#">#LEOMESSIISTHEGOAT.</a>
+                </p>
+                <img src="images/photo-city.jfif" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-img.jfif">30k</div>
+                        <div><img src="images/message-1.png">11k</div>
+                        <div><img src="images/share-edit.png">2k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/Ayomide-1.png">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+
+
+
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4> Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>12</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p>Follow me on twitter</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>28</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Football Match</h4>
+                    <p>Argentina vs Portugal</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/people-2.jfif" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/image-5-edit.jpg">
+                </div>
+                <p>Umoru Patience</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/image-3.jpg">
+                </div>
+                <p>Oladosu Taofeek</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/image-6-edit.jpg">
+                </div>
+                <p>Ojo Mutiu</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/people-3.jfif">
+                </div>
+                <p>Jacob Samuel</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>&copy;Copyright 2022 - Oladiipo Ayanlekan Ayomide</p>
+    </div>
+    <script src="my-facebook.js"></script>
+</body>
+
+</html>
